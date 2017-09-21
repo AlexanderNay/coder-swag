@@ -28,22 +28,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yza-Wg-NHK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yza-Wg-NHK">
                                 <rect key="frame" x="0.0" y="72" width="375" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="vtF-z7-9SY" customClass="CategoryTableViewCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="151" id="vtF-z7-9SY" customClass="CategoryTableViewCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vtF-z7-9SY" id="n3a-en-npQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="2F2-Fh-4Ya">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
+                                                    <rect key="frame" x="0.0" y="6" width="375" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="ugT-7c-V6d"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-vd-Wd1">
-                                                    <rect key="frame" x="8" y="65" width="359" height="21"/>
+                                                    <rect key="frame" x="8" y="70.5" width="359" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="tm9-7X-0Vx"/>
                                                     </constraints>
@@ -54,13 +57,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="2F2-Fh-4Ya" secondAttribute="trailing" id="8Id-ca-eKr"/>
-                                                <constraint firstAttribute="bottom" secondItem="2F2-Fh-4Ya" secondAttribute="bottom" id="9Lb-ye-Os7"/>
+                                                <constraint firstAttribute="bottom" secondItem="2F2-Fh-4Ya" secondAttribute="bottom" constant="6" id="9Lb-ye-Os7"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="xnZ-vd-Wd1" secondAttribute="trailing" id="Cd1-YE-jbm"/>
                                                 <constraint firstItem="2F2-Fh-4Ya" firstAttribute="leading" secondItem="n3a-en-npQ" secondAttribute="leading" id="CnW-da-ijN"/>
                                                 <constraint firstItem="xnZ-vd-Wd1" firstAttribute="centerY" secondItem="n3a-en-npQ" secondAttribute="centerY" id="QJ9-zN-OCg"/>
                                                 <constraint firstItem="xnZ-vd-Wd1" firstAttribute="leading" secondItem="n3a-en-npQ" secondAttribute="leadingMargin" id="bKT-UF-e2I"/>
                                                 <constraint firstItem="xnZ-vd-Wd1" firstAttribute="centerX" secondItem="n3a-en-npQ" secondAttribute="centerX" id="gYk-Jx-LEC"/>
-                                                <constraint firstItem="2F2-Fh-4Ya" firstAttribute="top" secondItem="n3a-en-npQ" secondAttribute="top" id="rd1-FQ-dtv"/>
+                                                <constraint firstItem="2F2-Fh-4Ya" firstAttribute="top" secondItem="n3a-en-npQ" secondAttribute="top" constant="6" id="rd1-FQ-dtv"/>
+                                                <constraint firstItem="2F2-Fh-4Ya" firstAttribute="centerY" secondItem="n3a-en-npQ" secondAttribute="centerY" id="xdI-ey-2qd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
