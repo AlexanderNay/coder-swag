@@ -15,6 +15,9 @@
 		B01BDCC51F73E75F00572FFD /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01BDCC41F73E75F00572FFD /* CategoryTableViewCell.swift */; };
 		B01BDCC71F73EA9200572FFD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01BDCC61F73EA9200572FFD /* Category.swift */; };
 		B01BDCCA1F73EC5A00572FFD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01BDCC91F73EC5A00572FFD /* DataService.swift */; };
+		B01BDCCC1F742AC900572FFD /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01BDCCB1F742AC900572FFD /* ProductCollectionViewCell.swift */; };
+		B01BDCCE1F742C1F00572FFD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01BDCCD1F742C1F00572FFD /* Product.swift */; };
+		B01BDCD01F7432FF00572FFD /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01BDCCF1F7432FF00572FFD /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		B01BDCC41F73E75F00572FFD /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		B01BDCC61F73EA9200572FFD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B01BDCC91F73EC5A00572FFD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B01BDCCB1F742AC900572FFD /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		B01BDCCD1F742C1F00572FFD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B01BDCCF1F7432FF00572FFD /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B01BDCB11F72678000572FFD /* CategoriesViewController.swift */,
+				B01BDCCF1F7432FF00572FFD /* ProductViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B01BDCC61F73EA9200572FFD /* Category.swift */,
+				B01BDCCD1F742C1F00572FFD /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B01BDCC41F73E75F00572FFD /* CategoryTableViewCell.swift */,
+				B01BDCCB1F742AC900572FFD /* ProductCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,7 +190,10 @@
 				B01BDCB01F72678000572FFD /* AppDelegate.swift in Sources */,
 				B01BDCC51F73E75F00572FFD /* CategoryTableViewCell.swift in Sources */,
 				B01BDCC71F73EA9200572FFD /* Category.swift in Sources */,
+				B01BDCCC1F742AC900572FFD /* ProductCollectionViewCell.swift in Sources */,
 				B01BDCCA1F73EC5A00572FFD /* DataService.swift in Sources */,
+				B01BDCD01F7432FF00572FFD /* ProductViewController.swift in Sources */,
+				B01BDCCE1F742C1F00572FFD /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
