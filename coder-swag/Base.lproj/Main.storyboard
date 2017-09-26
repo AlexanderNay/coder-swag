@@ -89,7 +89,7 @@
                     <navigationItem key="navigationItem" title="CODERSWAG" id="UDj-6i-LSs"/>
                     <connections>
                         <outlet property="categoryTable" destination="yza-Wg-NHK" id="akZ-C2-M9y"/>
-                        <segue destination="0Fl-IO-5zZ" kind="show" identifier="PoductsVC" id="HY7-ke-oO3"/>
+                        <segue destination="0Fl-IO-5zZ" kind="show" identifier="ProductsVC" id="HY7-ke-oO3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,7 +124,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EPU-so-M3Y" customClass="ProductCollectionViewCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="EPU-so-M3Y" customClass="ProductCollectionViewCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="164" height="247"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -188,6 +188,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C6U-5d-8di"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="XiD-xS-g8d" id="Vss-NW-bjP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUF-UC-4Kq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

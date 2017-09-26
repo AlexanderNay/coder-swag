@@ -27,6 +27,7 @@ class DataService {
         Product(title: "Devslopes Logo Graphic Beanie", price: "$18", imageName: "hat01.png"),
         Product(title: "Devslopes Logo Hat Black", price: "$22", imageName: "hat02.png"),
         Product(title: "Devdlopes Logo Hat White", price: "$21", imageName: "hat03.png"),
+        Product(title: "Devslopes Logo Snapback", price: "$20", imageName: "hat04.png"),
         Product(title: "Devslopes Logo Snapback", price: "$20", imageName: "hat04.png")
     ]
     
@@ -56,7 +57,7 @@ class DataService {
             return getHoodies()
         case "HATS":
             return getHats()
-        case "DIGITALGOODS":
+        case "DIGITAL":
             return getDigitalGoods()
         default:
             return getShirts()
